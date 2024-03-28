@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.simonkingws.webconfig.trace.admin.mapper.TraceWalkingMethodMapper">
-    <select id="statServerInvokeCount" resultType="com.simonkingws.webconfig.trace.admin.vo.ServerInvokeVO">
+<mapper namespace="io.github.simonkingws.webconfig.trace.admin.mapper.TraceWalkingMethodMapper">
+    <select id="statServerInvokeCount" resultType="io.github.simonkingws.webconfig.trace.admin.vo.ServerInvokeVO">
         SELECT
             m.provider_server_name as serverName,
             COUNT(*) as invokeCount
@@ -9,7 +9,7 @@
         GROUP BY m.provider_server_name
     </select>
 
-    <select id="getMethodInvokeStat" resultType="com.simonkingws.webconfig.trace.admin.vo.MethodStatVO">
+    <select id="getMethodInvokeStat" resultType="io.github.simonkingws.webconfig.trace.admin.vo.MethodStatVO">
         SELECT
             m.class_name as className,
             m.method_name as methodName,

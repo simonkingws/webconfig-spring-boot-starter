@@ -1,8 +1,8 @@
 package com.simonkingws.application;
 
 import com.alibaba.fastjson.JSON;
-import com.simonkingws.webconfig.common.context.RequestContextLocal;
-import com.simonkingws.webconfig.common.process.RequestContextLocalPostProcess;
+import io.github.simonkingws.webconfig.common.context.RequestContextLocal;
+import io.github.simonkingws.webconfig.common.process.RequestContextLocalPostProcess;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Service;

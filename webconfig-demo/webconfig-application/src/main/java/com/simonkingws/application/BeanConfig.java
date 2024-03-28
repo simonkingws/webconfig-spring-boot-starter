@@ -1,7 +1,7 @@
 package com.simonkingws.application;
 
-import com.simonkingws.webconfig.core.filter.ParameterTrimFilter;
-import com.simonkingws.webconfig.core.filter.XssFilter;
+import io.github.simonkingws.webconfig.core.filter.ParameterTrimFilter;
+import io.github.simonkingws.webconfig.core.filter.XssFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

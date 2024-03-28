@@ -14,9 +14,9 @@
         <webconfig-service.version>0.0.1-SNAPSHOT</webconfig-service.version>
         <webconfig-service2.version>0.0.1-SNAPSHOT</webconfig-service2.version>
 
-        <webconfig-dubbo3.version>1.0.1</webconfig-dubbo3.version>
-        <webconfig-feign.version>1.0.1</webconfig-feign.version>
-        <webconfig-starter.version>1.0.1</webconfig-starter.version>
+        <webconfig-dubbo3.version>1.1.0</webconfig-dubbo3.version>
+        <webconfig-feign.version>1.1.0</webconfig-feign.version>
+        <webconfig-starter.version>1.1.0</webconfig-starter.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -68,19 +68,19 @@
             </dependency>
 
             <dependency>
-                <groupId>com.simonkingws</groupId>
+                <groupId>io.github.simonkingws</groupId>
                 <artifactId>webconfig-dubbo3</artifactId>
                 <version>${webconfig-dubbo3.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.simonkingws</groupId>
+                <groupId>io.github.simonkingws</groupId>
                 <artifactId>webconfig-feign</artifactId>
                 <version>${webconfig-feign.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.simonkingws</groupId>
+                <groupId>io.github.simonkingws</groupId>
                 <artifactId>webconfig-spring-boot-starter</artifactId>
-                <version>${webconfig-starter.version}</version>
+                <version>1.1.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

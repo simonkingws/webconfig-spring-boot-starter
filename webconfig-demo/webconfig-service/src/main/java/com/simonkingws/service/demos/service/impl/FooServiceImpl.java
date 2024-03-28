@@ -1,7 +1,7 @@
 package com.simonkingws.service.demos.service.impl;
 
 import com.simonkingws.api.service.FooService;
-import com.simonkingws.webconfig.core.annotation.InnerTrace;
+import io.github.simonkingws.webconfig.core.annotation.InnerTrace;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

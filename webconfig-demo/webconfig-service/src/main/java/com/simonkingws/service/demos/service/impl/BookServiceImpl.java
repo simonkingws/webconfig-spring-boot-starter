@@ -3,7 +3,7 @@ package com.simonkingws.service.demos.service.impl;
 import com.simonkingws.api.service.BookService;
 import com.simonkingws.api.service.FooService;
 import com.simonkingws.api.service2.Book2Service;
-import com.simonkingws.webconfig.core.annotation.InnerTrace;
+import io.github.simonkingws.webconfig.core.annotation.InnerTrace;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;

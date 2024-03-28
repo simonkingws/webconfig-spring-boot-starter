@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.simonkingws.webconfig.core.config.WebconfigAutoConfigration
+io.github.simonkingws.webconfig.core.config.WebconfigAutoConfigration

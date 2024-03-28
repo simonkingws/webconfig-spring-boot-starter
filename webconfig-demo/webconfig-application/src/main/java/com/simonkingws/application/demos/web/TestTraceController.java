@@ -1,7 +1,7 @@
 package com.simonkingws.application.demos.web;
 
 import com.alibaba.fastjson.JSON;
-import com.simonkingws.webconfig.common.context.TraceItem;
+import io.github.simonkingws.webconfig.common.context.TraceItem;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -9,7 +9,7 @@
     <description>webconfig-trace-admin</description>
 
     <properties>
-        <webconfig-starter.version>1.0.1</webconfig-starter.version>
+        <webconfig-starter.version>1.1.0</webconfig-starter.version>
 
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,9 +20,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.simonkingws</groupId>
+            <groupId>io.github.simonkingws</groupId>
             <artifactId>webconfig-spring-boot-starter</artifactId>
-            <version>${webconfig-starter.version}</version>
+            <version>1.1.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
@@ -96,7 +96,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.simonkingws.webconfig.trace.admin.WebconfigTraceAdminApplication</mainClass>
+                    <mainClass>io.github.simonkingws.webconfig.trace.admin.WebconfigTraceAdminApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

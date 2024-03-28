@@ -2,7 +2,7 @@ package com.simonkingws.application.demos.web;
 
 import com.alibaba.fastjson2.util.DateUtils;
 import com.simonkingws.api.service.BookService1FeignClient;
-import com.simonkingws.webconfig.common.constant.DateFormatConstant;
+import io.github.simonkingws.webconfig.common.constant.DateFormatConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
