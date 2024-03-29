@@ -9,6 +9,15 @@ JDK1.8+，redis，springboot2.x，dubbo3.x
 为了规范项目，很多项目已经要求全局配置一些公用的组件，例如异常捕获、参数校验、统一返回参数等。所以`webconfig`就是为了解决此类问题，封装好通用的参数并提供可插拔的配置，方便我们规范项目。
 
 ### webconfig-spring-boot-starter 特性
+依赖：
+```xml
+<!-- https://central.sonatype.com/artifact/io.github.simonkingws/webconfig-spring-boot-starte -->
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-spring-boot-starter</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
 * 统一接口返回。可配置自定义所需要的统一返回实体。
 * 统一异常捕获。所有的异常统一处理，也可以自定义异常。并针对需要异常发送通知。
 * 统一日期参数的处理。form表单类的日期统一处理，包括Date、LocalDateTime。
@@ -23,9 +32,27 @@ JDK1.8+，redis，springboot2.x，dubbo3.x
 * 在线运维arthas。
 
 ### webconfig-dubbo3 特性
+依赖：
+```xml
+<!-- https://central.sonatype.com/artifact/io.github.simonkingws/webconfig-dubbo3 -->
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-dubbo3</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
 * duubo3下全局参数
 
 ### webconfig-feign 特性
+依赖：
+```xml
+<!-- https://central.sonatype.com/artifact/io.github.simonkingws/webconfig-feign -->
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-feign</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
 * feign调用下的全局参数
 * Date参数传递时差问题统一处理
 

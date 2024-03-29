@@ -2,7 +2,13 @@
 
 ### 1、webconfig-spring-boot-starter
 #### 1.1 依赖引入
-> 由于项目目前未发布到中央仓库，需要将项目打包到本地仓库，方能使用。未来考虑发布到中央仓库
+```xml
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-spring-boot-starter</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
 #### 1.2 接口统一返回
 引入项目之后默认提供统一返回结果集：```com.simonkingws.webconfig.common.core.JsonResult```
 ```json
@@ -347,20 +353,35 @@ public class WebconfigProperies {
 
 ### 2、webconfig-dubbo3
 主要通过dubbo3传递全局参数。
-#### 2.1 dubbo扩展Filter
+#### 2.1 引入依赖
+```xml
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-dubbo3</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
+#### 2.2 dubbo扩展Filter
 Filter类：`com.simonkingws.webconfig.dubbo3.filter.DubboRpcFilter`
 * 通过消费端将全局参数设置到Dubbo中
 * 通过服务端记录链路信息
 * 链路信息保存在Redis中，方面消费端获取全局链路
 
 ### 3、webconfig-feign
-
-#### 3.1 全局参数拦截器
+#### 3.1 引入依赖
+```xml
+<dependency>
+    <groupId>io.github.simonkingws</groupId>
+    <artifactId>webconfig-feign</artifactId>
+    <version>${latest.version}</version>
+</dependency>
+```
+#### 3.2 全局参数拦截器
 拦截器：`com.simonkingws.webconfig.feign.interceptor.FeignRequestInterceptor`
 * 通过`feign.RequestTemplate`将`RequestHeader`参数和上下文参数`RequestContextLocal`交互
 * 所有的数据都是放在请求头里面的
 
-#### 3.2 日期参数传递的时差问题处理
+#### 3.3 日期参数传递的时差问题处理
 自定义Formatter，将日期转化成字符串`yyyy-MM-dd HH:mm:ss`，这和`1.4 统一日期的处理`对应，否则会出问题。
 
 支持的日期类型：
@@ -374,6 +395,9 @@ Filter类：`com.simonkingws.webconfig.dubbo3.filter.DubboRpcFilter`
 
 
 ### 5、更新日志
+### v1.1.0 @2024-03-29
+* 发布分别startter、dubbo3、feign中央仓库版本的1.1.0版本
+
 ### v1.0.1 @2024-03-18
 * [优化]`webconfig-trace-admin` 完整链路增加用户的信息以及索引
 * [新增]`webconfig-spring-boot-starter` 增加`@PrintParams` 打印请求参数的注解
